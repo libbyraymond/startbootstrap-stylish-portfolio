@@ -1,93 +1,116 @@
 <!DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Amazon Music</title>
-            <link href="css/styles.css" rel="stylesheet">
-            <style>
-                /* Floating header styles */
-                .floating-header {
-                    position: fixed;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 60px;
-                    background-color: rgba(0, 0, 0, 0.422); /* Semi-transparent black */
-                    color: rgb(255, 255, 255);
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 0 20px;
-                    z-index: 1000;
-                }
-        
-                .floating-header a {
-                    color: rgb(255, 255, 255);
-                    text-decoration: none;
-                    font-size: 1.5rem;
-                }
-        
-                .back-arrow {
-                    font-size: 1.8rem;
-                    cursor: pointer;
-                }
-            </style>
-        </head>
-        <body>
-            <!-- Floating Header -->
-            <div class="floating-header">
-                <a href="index.html" class="back-arrow">&larr;</a> <!-- Back arrow -->
-        
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        /* Floating header styles */
+        .floating-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: rgba(0, 0, 0, 0.422); /* Semi-transparent black */
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .floating-header a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .back-arrow {
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        /* Add padding and spacing for the gallery */
+            .gallery-container {
+            padding: 20px; /* Padding around the entire gallery */
+        }
+
+        .gallery-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between images */
+        }
+
+        .col-lg-4 {
+            flex: 1 1 calc(33.333% - 20px); /* Each column takes up 1/3 of the row, minus the gap */
+            box-sizing: border-box; /* Ensures padding and borders are included in the width */
+        }
+
+        .gallery-row img {
+            width: 100%; /* Make images fill the column */
+            display: block; /* Prevent inline spacing issues */
+            padding: 10px; /* Padding around each image */
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating Header -->
+    <div class="floating-header">
+        <a href="index.html" class="back-arrow">&larr;</a> <!-- Back arrow -->
+    </div>
+
+    <main>
+        <section class="content-section bg-light">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2 style="padding: 0px;">My Photography</h2>
+                    </div>
+                </div>
             </div>
-            <!-- Gallery -->
-            <div class="row">
+        </section>
+    </main>
+
+    <!-- Gallery -->
+    <div class="gallery-container">
+        <div class="gallery-row">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-            />
-        
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Wintry Mountain Landscape"
-            />
+                <img src="assets/Photography/Scotland8.jpg" alt="2 people walking on the isle of skye">
+                <img src="assets/Photography/_DSC0684.jpg" alt="Waves Crashing on Rocks with the Golden Gate Bridge in the Background">
+                <img src="assets/Photography/DancerFloor1.jpeg" alt="A ballet dancer stretching over her toes from above">
+                <img src="assets/Photography/seal.jpeg" alt="A seal framed by rocks">
+                <img src="assets/Photography/NULibrary.jpeg" alt="Northwestern Deering Library with sun streaming through the windows">
+                <img src="assets/Photography/landsendSignH.jpeg" alt="sign on a cliff covered in graffiti">
+                <img src="assets/Photography/LM3.jpeg" alt="Black and White Quiet, Respect please sign at the Lincoln Memorial">
             </div>
-        
+
             <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Mountains in the Clouds"
-            />
-        
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Boat on Calm Water"
-            />
+                <img src="assets/Photography/GrowingPains.jpeg" alt="Versions of the same girl on a floating dock">
+                <img src="assets/Photography/Dancefloor2.jpeg" alt="Two ballet dancers on a dance floor tying their shoes">
+                <img src="assets/Photography/TaewonCarmelBeach.jpg" alt="Person walking on the beach at sunset with their reflection in the wet sand">
+                <img src="assets/Photography/danceBack.jpeg" alt="A Ballet dancer in first position with her back to the camera">
+                <img src="assets/Photography/Scotland1 1.jpg" alt="Edinburgh Castle close up with the flag flying in the wind">
+                <img src="assets/Photography/_DSC0732.jpg" alt="Foggy reflections of people in the sutro baths in san francisco">
             </div>
-        
+
             <div class="col-lg-4 mb-4 mb-lg-0">
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Waves at Sea"
-            />
-        
-            <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                class="w-100 shadow-1-strong rounded mb-4"
-                alt="Yosemite National Park"
-            />
+                <img src="assets/Photography/DancersStretch.jpeg" alt="two dancers stretching at the barre">
+                <img src="assets/Photography/Oranges.jpeg" alt="Oranges through the ripped netting">
+                <img src="assets/Photography/MuralPics-07.JPG" alt="A weathered mural">
+                <img src="assets/Photography/IMG_0936.jpg" alt="Three people swimming in a lake at the base of a mountain">
+                <img src="assets/Photography/SantaClaraFountain.jpeg" alt="Fountain at santa clara university with the mission church in the background">
+                <img src="assets/Photography/Evan2.jpeg" alt="bikes locked up underneath the noyes train station">
+                <img src="assets/Photography/IMG_3603.JPG" alt="Little boy running up a winding path in Muir Woods">
             </div>
         </div>
-    <!-- Gallery -->
-     <!-- Footer Section -->
-     <footer style="text-align: center; padding: 10px;">
+    </div>
+
+    <!-- Footer Section -->
+    <footer style="text-align: center; padding: 10px;">
         <a class="btn btn-dark btn-xl" href="index.html">Back to Portfolio</a>
     </footer>
-        </body>
-    </html>
+</body>
+</html>
