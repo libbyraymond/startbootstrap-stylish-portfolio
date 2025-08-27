@@ -11116,3 +11116,9 @@ footer.footer .social-link:hover {
   display: block;
   margin: 0 auto; 
 }
+
+.about-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
