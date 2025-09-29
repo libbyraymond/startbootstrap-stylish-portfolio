@@ -32,6 +32,28 @@
                     font-size: 1.8rem;
                     cursor: pointer;
                 }
+
+                /* Add padding and spacing for the gallery */
+                    .gallery-container {
+                    padding: 20px; /* Padding around the entire gallery */
+                }
+
+                .gallery-row {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px; /* Space between images */
+                }
+
+                .col-lg-4 {
+                    flex: 1 1 calc(33.333% - 20px); /* Each column takes up 1/3 of the row, minus the gap */
+                    box-sizing: border-box; /* Ensures padding and borders are included in the width */
+                }
+
+                .gallery-row img {
+                    width: 100%; /* Make images fill the column */
+                    display: block; /* Prevent inline spacing issues */
+                    padding: 10px; /* Padding around each image */
+                }
             </style>
         </head>
         <body>
@@ -41,30 +63,62 @@
         
             </div>
             <!-- Header Section with Image -->
-            <header style="width: 100%; height: 600px; overflow: hidden; position: relative;">
-                <img src="assets/Portfolio Work/Solidworks/Headphones Header.jpg" alt="CAD project" style="width: 100%; height: 100%; object-fit: cover;">
+            <header style="width: 100%; height: 400px; overflow: hidden; position: relative;">
+                <img src="assets/Portfolio Work/Solidworks/Headphones Header.jpg" alt="CAD project" style="width: 100%; height: 100%; object-fit: cover; display: block;">
             </header>
-        
-            <!-- Main Content Section -->
             <main>
                 <section class="content-section bg-light">
                     <div class="container px-4 px-lg-5 text-center">
                         <div class="row gx-4 gx-lg-5 justify-content-center">
                             <div class="col-lg-10">
-                                <h2 style="padding: 30px;">CAD Projects</h2>
-                                <p class="lead mb-5" style="text-align: left;">
-                                    This project showcases the design and branding work done for Amazon Music. The goal was to create a visually appealing and cohesive design that aligns with the brand's identity.
-                                </p>
-                                <p class="lead mb-5" style="text-align: left;">
-                                    Throughout the project, we focused on creating a clean and modern aesthetic. The use of vibrant colors and bold typography helped to capture the essence of Amazon Music's dynamic and innovative spirit.
-                                </p>
-                                <p class="lead mb-5" style="text-align: left;">
-                                    The design process involved extensive research, prototyping, and collaboration with the team to ensure the final product met the client's expectations.
-                                </p>
+                                <h2 style="
+                                    padding: 10px 0 20px 0;  /* Reduced top padding */
+                                    font-size: 3rem;
+                                    font-weight: 700;
+                                    letter-spacing: 2px;
+                                    color: #2C3E50;
+                                    text-transform: uppercase;
+                                    border-bottom: 3px solid #b50b88;
+                                    display: inline-block;
+                                ">
+                                   3D models and Renderings
+                                </h2>
                             </div>
                         </div>
                     </div>
-            </main>
+                </section>
+
+
+        
+            <!-- Gallery -->
+            <div class="gallery-container">
+                <div class="gallery-row">
+                    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                        <img src="assets/Portfolio Work/Solidworks/Headphones Header.jpg" alt="Headphones CAD model">
+                        <img src="assets/Portfolio Work/Solidworks/Screen Shot 2024-10-02 at 10.48.35 AM.png" alt="Shovel CAD model">
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="assets/Portfolio Work/Solidworks/Oxo_Practice.8.jpg" alt="Pepper grinder CAD model">
+                       
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <img src="assets/Portfolio Work/Solidworks/Screen Shot 2024-10-02 at 10.37.06 AM.png" alt="Phone CAD model">
+                        <video controls
+                            style="width: 100%; height: auto; display: block;"
+                            poster="assets/Portfolio Work/Solidworks/detergent-thumbnail.jpg">
+                            <source src="assets/Portfolio Work/Solidworks/detergent (1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video controls
+                            style="width: 100%; height: auto; display: block;"
+                            poster="assets/Portfolio Work/Solidworks/airpod max smooth.mp4">
+                            <source src="assets/Portfolio Work/Solidworks/airpod max smooth.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+            </div>
         
             <!-- Footer Section -->
             <footer style="text-align: center; padding: 10px;">
