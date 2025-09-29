@@ -10958,18 +10958,20 @@ html {
 }
 
 .photography {
-  padding: 15rem 0;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  padding: 3rem 0 15rem 0; /* top 3rem, bottom 6rem */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/Photography/landsendSignH.jpeg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .photography h2, .photography .h2 {
   font-size: 3.5rem;
   font-weight: 700;
   display: block;
   max-width: 30rem;
 }
+
 
 footer.footer {
   padding-top: 5rem;
@@ -11014,7 +11016,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/Untitled-1.png");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/Photography/_DSC0684.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
